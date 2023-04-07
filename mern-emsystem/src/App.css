@@ -1,0 +1,239 @@
+
+@import url("https://fonts.googleapis.com/css?family-Inter:400,700,300,500,600,800");
+
+:root {
+  --curious-blue: rgba(26,143,206,1);
+  --bahama-blue: rgba(0,93,153,1);
+  --daintree: rgba(0,31,51,1);
+
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  background-color: var(--curious-blue);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  height: 877px;
+  overflow: hidden;
+  width: auto;
+}
+
+.group-51 {
+  align-items: flex-start;
+  display: flex;
+  min-width: auto;
+}
+
+.overlap-group {
+  align-items: center;
+  background-size: 100% 100%;
+  display: flex;
+  height: 128px;
+  min-width: 1440px;
+  padding: 3px 24px;
+
+}
+
+.overlap-group1 {
+  align-self: flex-end;
+  height: 113px;
+  position: relative;
+  width: 81px;
+
+}
+
+.uor {
+  height: 54px;
+  left: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-decoration: underline;
+  top: 23px;
+  width: 45px;
+}
+
+.unilogo-2 {
+  height: 113px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 81px;
+}
+
+.undergraduate-project-portal {
+  height: 70px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: 0,18px;
+  margin-left: 29px;
+  width: 181px;
+
+}
+
+
+/*
+.you-are-not-logged-in {
+  height: 17px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: 5.21px;
+  margin-left: 775px;
+  width: 265px;
+
+}
+*/
+
+.overlap-group-container {
+  align-items: flex-end;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 2px;
+  min-height: 577px;
+  padding: 117.1px 216.4px;
+  width: 1437px;
+}
+
+.overlap-group2 {
+  height: 195px;
+  margin-top: 90px;
+  position: relative;
+  width: 997px;
+}
+
+.rectangle-59 {
+  height: 141px;
+  left: 45px;
+  mix-blend-mode: luminosity;
+  position: absolute;
+  top: 0;
+  width: 908px;
+}
+
+.undergraduate-project-portal-1 {
+  -webkit-text-stroke: 1px var(--alto);
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 7px;
+  width: 997px;
+}
+
+.overlap-group3 {
+  align-items: flex-start;
+  align-self: center;
+  /*background-image: url(rectangle-5.svg);*/
+  border-style: 100% 100%;
+  display:flex;
+  height: 50px;
+  justify-content: flex-end;
+  margin-left: 0.1px;
+  min-width: 155px;
+  padding: 12px 39.1px;
+
+}
+
+.log-in {
+  height: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  width: 71px;
+
+}
+
+
+.group-41 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 1442px;
+}
+
+.overlap-group1-1 {
+  /*background-image: url(rectangle-23-1.svg);
+  background-size: 100% 100%;*/
+  height: 170px;
+  position: relative;
+  width: 1440px;
+}
+
+.useful-links-departm {
+  height: 157px;
+  left: 273px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 894px;
+}
+
+.rectangle-24 {
+  height: 170px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.overlap-group1 {
+  align-items: flex-start;
+ /* background-image: url(rectangle-23-1.svg);*/
+  background-size: 100% 100%;
+  display: flex;
+  height: 170px;
+  justify-content: flex-end;
+  left: 0;
+  min-width: 1440px;
+  padding: 6px 93px;
+  position: absolute;
+  top: 0;
+
+}
+
+
+
+.useful-links-departm-1 {
+  height: 157px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 1202px;
+}
+
+.inter-medium-daintree-20px {
+  
+}
