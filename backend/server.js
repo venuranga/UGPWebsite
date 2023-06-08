@@ -1,19 +1,23 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
+//const morgan = require( "morgan");
+const DynamicCollection = require("./models/collection");
+const collectionRoutes = require("./routes/collection");
+const ResultsRoutes =  require("./routes/Results");
+const authRoutes = require("./routes/authRoute");
+const StudentRoutes = require("./routes/Students");
 
 const app = express();
-const portscanner = require('portscanner');
 
-const url = 'mongodb://127.0.0.1:27017/UGPDatabase';
+const port = process.env.port || 5000
+
+const url = 'mongodb+srv://svenuranga:iamleVenu98%23@cluster0.n8pqomt.mongodb.net/UGPDatabase?retryWrites=true&w=majority';
 
 
 app.use(cors());
 app.use(express.json());
-const startServer = async () => {
-    const port = await portscanner.findAPortNotInUse(3000, 4000, '127.0.0.1');
-    console.log(`Server is listening on port ${port}`);
-};
+//app.use(morgan('dev'));
 
 const mongoose = require('mongoose');
 
@@ -25,4 +29,14 @@ mongoose.connect(url, {
     console.log("Connected to MongoDB database");
 }).catch((err) => {
     console.log("Error connecting to MongoDB database:", err);
+});
+
+
+app.use('/api/createCollection', collectionRoutes);
+app.use('/api/results', ResultsRoutes);
+app.use("/api/v1/auth", authRoutes);
+app.use('/api/students', StudentRoutes);
+
+app.listen(port, () =>{
+    console.log(`Server is running on port: ${port}`);
 });
