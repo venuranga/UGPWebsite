@@ -1,0 +1,41 @@
+
+.coordinatorname
+{
+  position: absolute;
+  width: 264.83px;
+  height: 16.79px;
+  left: 1300px;
+  top: 60px;
+  background-color: transparent;
+  border-color: transparent;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+}
+
+.title
+{
+    position: absolute;
+    width: 264.83px;
+    height: 16.79px;
+    left: 680px;
+    top: 240px;
+   
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 24px;
+    display: flex;
+    
+    
+    color: #4144a2;
+}

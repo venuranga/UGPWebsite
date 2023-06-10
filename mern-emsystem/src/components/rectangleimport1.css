@@ -1,0 +1,115 @@
+.rectangleimport1 {
+    position: absolute;
+    width: 580px;
+    height: 200px;
+    left:500px;
+    top:350px;
+    border-color:rgb(0, 0, 0) !important;
+
+    background: #84c1f6;
+border-radius: 20px 20px 20px 20px;
+
+    }
+
+    .additem
+    {
+        position: absolute;
+    width: 57px;
+    height: 42.11px;
+    left: 330px;
+    top: 327.48px;
+    border-radius: 5px 5px 5px 5px;
+    border-color: rgb(255, 255, 255)
+    }
+    
+    .csv
+    {
+        position: absolute;
+    width: 57px;
+    height: 42.11px;
+    left: 230px;
+    top: 327.48px;
+    border-radius: 5px 5px 5px 5px;
+    border-color: rgb(255, 255, 255)
+    }
+
+    .add
+    {
+        position: absolute;
+    width: 57px;
+    height: 42.11px;
+    left: 630px;
+    top: 327.48px;
+    border-radius: 5px 5px 5px 5px;
+    border-color: rgb(255, 255, 255)
+    }
+    .additem
+    {
+        position: absolute;
+    width: 403px;
+    height: 20.21px;
+    left: 619px;
+    top: 450px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    
+    color: rgba(3, 37, 76, 0.71);
+    }
+
+    input[type="file"] {
+        position: absolute;
+        width: 300px;
+        height: 20.21px;
+        left: 180px;
+        top: 50px;
+        background: #84c1f6;
+        border: none;
+        padding: 10px;
+        color: #1b549b;
+        font-size: 16px;
+        margin-right: 10px;
+        border-radius: 20px 20px 20px 20px;
+      }
+      
+      input[type="submit"] {
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        left: 250px;
+        top: 120px;
+        background-color: #566cb2;
+        color: white;
+        border: none;
+        padding: 5px 5px 5px 5px ;
+        font-size: 16px;
+        cursor: pointer;
+       
+        border-radius: 5px 5px 5px 5px;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3858cd;
+      }
+      
+      .file-upload-wrapper {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+      }
+      
+      .file-upload-wrapper input[type="file"] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        cursor: pointer;
+        background-color: #3858cd !important;
+      }
+    

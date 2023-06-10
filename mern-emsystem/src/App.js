@@ -1,16 +1,65 @@
-//import logo from './logo.svg';
-import './App.css';
+import Loginpage from './pages/Loginpage'
+import Homedepthead from './pages/Homedepthead'
+import Homepage from './pages/Homepage'
+import Homecoordinator from './pages/Homecoordinator'
+import Homestudent from './pages/Homestudent'
+import Addstudents from './pages/Addstudents'
+import Importmarks from './pages/Importmarks'
+import Projects from './pages/Projects'
+import Addnewcriteria from './marks'
+import Viewmarks from './pages/Viewmarks'
+import Importmarksheet from './pages/Importmarksheet'
+import Importstudentlist from './pages/Importstudentlist'
+import Importstudent from './pages/Importstudent'
+import Viewstudents from './pages/Viewstudents'
+//import AdminRouter from './components/Routes/AdminRoute'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+//import Exclusive from './pages/Exclusive'
+
+function App() {
+  return (
+
+    <Router>
+     
+    <Routes>
+      
+   
+      <Route path="/" element={<Homepage />} />
+      <Route path="/Homepage" element={<Homepage />} />
+      <Route path="/Loginpage" element={<Loginpage />} />
+      <Route path="/Projects" element={<Projects />} />
+      <Route path="/Addstudents" element={<Addstudents />} />
 
 
+      <Route path="/Homecoordinator" element={<Homecoordinator />} />
 
-// Create a form for entering new project marks
-import React /*, { useState }*/ from 'react';
+
+      
+      <Route path="/Homestudent" element={<Homestudent />} />
+      <Route path="/Importmarks" element={<Importmarks />} />
+      <Route path="/Importmarksheet" element={<Importmarksheet />} />
+      <Route path="/Importstudentlist" element={<Importstudentlist />} />
+      <Route path="/Importstudent" element={<Importstudent />} />
+      <Route path="/Homedepthead" element={<Homedepthead />} />
+      <Route path="/marks" element={<Addnewcriteria />} />
+      <Route path="/Viewmarks" element={<Viewmarks />} />
+      <Route path = "/Viewstudents" element = {<Viewstudents />} />
+     
+    </Routes>
+  </Router>
+
+  );
+}
+
+export default App;
+/*
 
 function App() {
   return <Frame1 {...frame1Data} />;
 }
 
-export default App;
+
 
 function Frame1(props) {
   const {
@@ -18,7 +67,7 @@ function Frame1(props) {
     uor,
     unilogo2,
     undergraduateProjectPortal1,
-    /*youAreNotLoggedIn,*/
+    /*youAreNotLoggedIn,
     overlapGroupContainer,
     undergraduateProjectPortal2,
     logIn,
@@ -81,8 +130,9 @@ function Frame1(props) {
             
   );
 }
+*/
 
-
+/*
 const frame1Data = {
   overlapGroup: "group-13.png",
   uor: "uor",
@@ -97,7 +147,7 @@ const frame1Data = {
     </React.Fragment> 
   ),
 
-  /* youAreNotLoggedIn: "You are not logged in",*/
+  /* youAreNotLoggedIn: "You are not logged in",
    overlapGroupContainer: "C:/Users/svenu/Desktop/5thsem/softwareproject/download (1).jpg",
   undergraduateProjectPortal2: (
     <React.Fragment>
@@ -119,8 +169,6 @@ const frame1Data = {
     </React.Fragment>
   ), */
 
-
-};
 
 
 

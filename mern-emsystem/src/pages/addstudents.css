@@ -1,0 +1,77 @@
+.importexcelsheet
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+width: 300.1px;
+height: 40.9px;
+text-align:center;
+top: 300px;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+background:#187BCD;
+border-radius: 10px;
+border:transparent;
+color: #ffffff;
+
+}
+.importexcelsheet:hover {
+    width: 320px;
+    height: 50px;
+    color: #000000;
+    background:#2e81c6;
+    cursor: pointer;
+  }
+
+.viewimporteddata
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+width: 300.1px;
+height: 40.9px;
+text-align:center;
+top: 400px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+background: #187BCD;
+border-radius: 10px;
+border:transparent;
+color: #ffffff;
+margin:0 auto;
+}
+.viewimporteddata:hover {
+    width: 320px;
+    height: 50px;
+    color: #000000;
+    background:#2e81c6;
+    cursor: pointer;
+  }
+
+  .coordinatorname
+  {
+    position: absolute;
+    width: 264.83px;
+    height: 16.79px;
+    left: 1300px;
+    top: 60px;
+    background-color: transparent;
+    border-color: transparent;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+  }
