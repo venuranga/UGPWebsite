@@ -26,7 +26,7 @@ function Viewstudents() {
           <tr>
             <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}}>Student Name</th>
             <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}}>Reg No</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}} >Project No</th>
+            <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}} >Group_ID</th>
             <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}} >Project Title</th>
             <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}}>Evaluator</th>
           </tr>
@@ -36,7 +36,7 @@ function Viewstudents() {
             <tr key={index}>
               <td style = {{border: "1px solid white"}}>{item.Student_Name}</td>
               <td style = {{border: "1px solid white"}}>{item.Reg_No}</td>
-              <td style = {{border: "1px solid white"}}>{item.Project_No}</td>
+              <td style = {{border: "1px solid white"}}>{item.Group_ID}</td>
               <td style = {{border: "1px solid white"}}>{item.Project_Title}</td>
               <td style = {{border: "1px solid white"}}>{item.Evaluator}</td>
             </tr>
