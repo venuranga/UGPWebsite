@@ -17,7 +17,9 @@ export default function Homecoordinator() {
   return (
     <div>
       <Header />
+      <Link to = "/AnalyzedData">
       <button className="viewdata">View Analyzed Data</button>
+      </Link>
       <Link to="/Importstudent">
         <button className="addstudents">Add Students</button>
       </Link>

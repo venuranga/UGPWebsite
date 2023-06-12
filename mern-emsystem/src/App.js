@@ -12,6 +12,7 @@ import Importmarksheet from './pages/Importmarksheet'
 import Importstudentlist from './pages/Importstudentlist'
 import Importstudent from './pages/Importstudent'
 import Viewstudents from './pages/Viewstudents'
+import AnalyzedData from './pages/analyzedData'
 //import AdminRouter from './components/Routes/AdminRoute'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -45,6 +46,7 @@ function App() {
       <Route path="/marks" element={<Addnewcriteria />} />
       <Route path="/Viewmarks" element={<Viewmarks />} />
       <Route path = "/Viewstudents" element = {<Viewstudents />} />
+      <Route path = "/AnalyzedData" element = {<AnalyzedData />} />
      
     </Routes>
   </Router>
