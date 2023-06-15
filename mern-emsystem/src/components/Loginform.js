@@ -33,7 +33,21 @@ import {useNavigate,useLocation} from 'react-router-dom';
         
     });
             localStorage.setItem('auth',JSON.stringify(res.data));
-      navigate(location.state || "/Homecoordinator");
+      //navigate(location.state || "/Homecoordinator");
+
+      if(res.data.user.role === 1) {
+        navigate("/Homecoordinator")
+      }
+      else if(res.data.user.role === 3) {
+        navigate("/Homedepthead")
+      }
+       else if(res.data.user.role === 2) {
+        navigate("/")
+      }
+      else if(res.data.user.role === 0) {
+        navigate("/Homestudent")
+      }
+
       console.log(auth);
             
       }

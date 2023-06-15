@@ -14,7 +14,14 @@ router.post('/add', upload.single('csv'), async (req,res) => {
           }
         const csvData = await csvtojson().fromFile(req.file.path);
         console.log(csvData);
-        await Results.insertMany(csvData);
+
+        const existingDocuments = await Results.find({ Group_ID: { $in: csvData.map((item) => item.Group_ID) } });
+        const existingGroupIDs = new Set(existingDocuments.map((doc) => doc.Group_ID));
+    
+        const newData = csvData.filter((item) => !existingGroupIDs.has(item.Group_ID));
+
+
+        await Results.insertMany(newData);
         console.log("Data Inserted")
         res.json({ success: 'Success'});
         alert("Importation successful");
