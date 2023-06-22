@@ -13,10 +13,10 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
-background:#68a7ca;
+background:#1177B1;
 border-radius: 10px;
 border:transparent;
-color: #000000;
+color: white;
 
 }
 .viewsubmission:hover {
@@ -41,10 +41,10 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
-background:#68a7ca;
+background: #1177B1;
 border-radius: 10px;
 border:transparent;
-color: #000000;
+color: white;
 margin:0 auto;
 }
 .evaluationdetails:hover {

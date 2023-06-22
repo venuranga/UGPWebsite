@@ -2,6 +2,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import Chart from 'chart.js/auto';
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
+import Navbar from '../components/Navbar.js';
+import _  from 'lodash';
+//import BarGraph from './BarGraph'; 
+import axios from 'axios';
+
 
 const AnalyzedData = () => {
   
@@ -104,120 +109,86 @@ const AnalyzedData = () => {
 //   );
 
 
-  const chartRef = useRef(null);
-  const [data, setData] = useState([]);
+//   
+
+
+// Import the component for rendering bar graphs
+
+const [FinalData, setFinalData] = useState([]); // State variable to store fetched final data
+  const [ProposalData, setProposalData] = useState([]); // State variable to store fetched proposal data // State variable to store fetched data
+  const [xAxis, setXAxis] = useState('');
+  const [yAxis, setYAxis] = useState('');
 
   useEffect(() => {
-    async function fetchData() {
+    // Fetch data from the database
+    const fetchfinalData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/results/grades');
-        if (!response.ok) {
-          throw new Error('Response not OK');
-        }
-        const data = await response.json();
-        setData(data);
+        const response = await axios.get('http://localhost:5000/results/grades');
+        setFinalData(response.data);
       } catch (error) {
         console.error(error);
       }
-    }
+    };
 
-    fetchData();
+
+      // Fetch data from the database
+      const fetchproposalData = async () => {
+        try {
+          const response = await axios.get('http://localhost:5000/proposal/grades');
+          setProposalData(response.data);
+        } catch (error) {
+          console.error(error);
+        }
+      };
+
+    fetchfinalData();
+    fetchproposalData();
   }, []);
 
-  useEffect(() => {
-    if (data.length > 0) {
-      const chartElement = chartRef.current;
-
-      if (chartElement) {
-        const ctx = chartElement.getContext('2d');
-        const labels = data.map(item => item.Group_ID);
-        const datasets = [ {
-        
-        label: 'Introduction_Background_and_Problem_statement',
-        data: data.map(item => item.Introduction_Background_and_Problem_statement ),
-        backgroundColor: 'red'
-        },
-
-        {
-
-        label: 'Knowledge_on_related_existing_work',
-        data: data.map(item => item.Knowledge_on_related_existing_work ),
-        backgroundColor: 'blue'
-
-        },
-
-        {
-
-        label: 'Objectives_Scope_and_Methodology',
-        data: data.map(item => item.Objectives_Scope_and_Methodology ),
-        backgroundColor: 'green'
-
-        },
 
 
-        {
 
-        label: 'Examiners_overall_assessment',
-        data :data.map(item => item.Examiners_overall_assessment),
-        backgroundColor: 'yellow'
+  // Event handler for selecting x axis
+  const handleXAxisChange = (event) => {
+    setXAxis(event.target.value);
+  };
 
-        },
-
-        {
-
-        label: 'Mechanics_of_writing',
-        data: data.map(item => item.Mechanics_of_writing),
-        backgroundColor: 'purple'
-        }
-    
-    
-    
-    ]; 
-
-
-        // label: ['Introduction_Background_and_Problem_statement', 'Knowledge_on_related_existing_work', 'Objectives_Scope_and_Methodology', 'Examiners_overall_assessment', 'Mechanics_of_writing'],
-        // data: [item.Introduction_Background_and_Problem_statement, item.Group_ID.Knowledge_on_related_existing_work, item.Group_ID.Objectives_Scope_and_Methodology, item.Group_ID.Examiners_overall_assessment, item.Group_ID.Mechanics_of_writing],
-        // backgroundColor: item.backgroundColor,
-
-        const chart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: labels,
-            datasets: datasets,
-          },
-          options: {
-            responsive: true,
-            scales: {
-              x: {
-                stacked: true,
-              },
-              y: {
-                stacked: true,
-              },
-            },
-          },
-        });
-
-        return () => {
-          // Cleanup chart instance when the component is unmounted
-          chart.destroy();
-        };
-      }
-    }
-  }, [data]);
+  // Event handler for selecting y axis
+  const handleYAxisChange = (event) => {
+    setYAxis(event.target.value);
+  };
 
   return (
     <div>
       <Header />
-      <canvas ref={chartRef} aria-label="chart" height="350" width="580" />
+      <Navbar />
+      <div className='dropdown'>
+      <label htmlFor="xAxis">Select X Axis:</label>
+      <select id="xAxis" value={xAxis} onChange={handleXAxisChange}>
+        {/* Render options for x axis */}
+        <option value="proposal">Proposal</option>
+        {/* <option value="progress">Progress</option> */}
+        <option value="final">Final</option>
+      </select>
+      </div>
+
+      <label htmlFor="yAxis">Select Y Axis:</label>
+      <select id="yAxis" value={yAxis} onChange={handleYAxisChange}>
+        {/* Render options for y axis */}
+        <option value="component1">Component 1</option>
+        <option value="component2">Component 2</option>
+        <option value="component3">Component 3</option>
+      </select>
+
+      {/* <BarGraph finaldata = {FinalData} proposalDta = {ProposalData} xAxis={xAxis} yAxis={yAxis} /> */}
       <Footer />
     </div>
   );
-
-
-
-
-
 };
+
+
+
+ 
+
 
 export default AnalyzedData;

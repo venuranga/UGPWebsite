@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Loginpage from './pages/Loginpage'
 import Homedepthead from './pages/Homedepthead'
 import Homepage from './pages/Homepage'
@@ -13,12 +14,20 @@ import Importstudentlist from './pages/Importstudentlist'
 import Importstudent from './pages/Importstudent'
 import Viewstudents from './pages/Viewstudents'
 import AnalyzedData from './pages/analyzedData'
+import ImportProposalMarks from './pages/ImportProposalMarks'
+import ViewProposalMarks from './pages/ViewProposalMarks'
+//import ProtectedRoute from './components/ProtectedRoutes'
 //import AdminRouter from './components/Routes/AdminRoute'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// const Roles = {
+//   'ModuleCoordinator': 1
+// }
 
 //import Exclusive from './pages/Exclusive'
 
 function App() {
+
   return (
 
     <Router>
@@ -33,7 +42,9 @@ function App() {
       <Route path="/Addstudents" element={<Addstudents />} />
 
 
-      <Route path="/Homecoordinator" element={<Homecoordinator />} />
+      {/* <Route element = {<ProtectedRoute  />}> */}
+        <Route path = "/Homecoordinator" element = {<Homecoordinator />} />
+      {/* </Route> */}
 
 
       
@@ -47,6 +58,8 @@ function App() {
       <Route path="/Viewmarks" element={<Viewmarks />} />
       <Route path = "/Viewstudents" element = {<Viewstudents />} />
       <Route path = "/AnalyzedData" element = {<AnalyzedData />} />
+      <Route path = "/ImportProposalMarks" element = {<ImportProposalMarks />} />
+      <Route path = "/ViewProposalMarks"  element = {<ViewProposalMarks />} />
      
     </Routes>
   </Router>

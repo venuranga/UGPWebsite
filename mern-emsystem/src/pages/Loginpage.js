@@ -4,6 +4,7 @@ import Header from '../components/Header.js'
 import Loginform from '../components/Loginform.js'
 import './loginpage.css'
 import {  Link } from 'react-router-dom';
+import Navbar from '../components/Navbar.js'
 
 
 export default function Loginpage() {
@@ -13,6 +14,7 @@ export default function Loginpage() {
   return (
     <div>
       <Header/>
+      <Navbar />
       <button className="notlogged">You are not logged in</button>
 <Loginform/>
       <Footer/>

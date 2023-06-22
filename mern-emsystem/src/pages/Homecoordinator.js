@@ -1,5 +1,6 @@
 import Footer from '../components/Footer.js'
 import Header from '../components/Header.js'
+import Navbar from '../components/Navbar.js';
 import './homecoordinator.css'
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
@@ -17,6 +18,7 @@ export default function Homecoordinator() {
   return (
     <div>
       <Header />
+      <Navbar />
       <Link to = "/AnalyzedData">
       <button className="viewdata">View Analyzed Data</button>
       </Link>

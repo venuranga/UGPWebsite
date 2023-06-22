@@ -13,10 +13,10 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
-background:#68a7ca;
+background: #1177B1;
 border-radius: 10px;
 border:transparent;
-color: #000000;
+color: white;
 
 }
 .importexcelsheet2:hover {
@@ -41,13 +41,70 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
-background:#68a7ca;
+background:#1177B1;
 border-radius: 10px;
 border:transparent;
-color: #000000;
+color: white;
 margin:0 auto;
 }
 .viewimporteddata2:hover {
+    width: 320px;
+    height: 50px;
+    color: #FFFFFF;
+    background: #4390bc;
+    cursor: pointer;
+  }
+
+  .importexcelsheet3
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+width: 300.1px;
+height: 40.9px;
+text-align:center;
+top: 300px;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+background: #1177B1;
+border-radius: 10px;
+border:transparent;
+color: white;
+
+}
+.importexcelsheet3:hover {
+    width: 320px;
+    height: 50px;
+    color: #FFFFFF;
+    background: #4390bc;
+    cursor: pointer;
+  }
+
+.viewimporteddata3
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+width: 300.1px;
+height: 40.9px;
+text-align:center;
+top: 400px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+background:#1177B1;
+border-radius: 10px;
+border:transparent;
+color: white;
+margin:0 auto;
+}
+.viewimporteddata3:hover {
     width: 320px;
     height: 50px;
     color: #FFFFFF;

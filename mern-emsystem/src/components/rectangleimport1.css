@@ -3,10 +3,10 @@
     width: 580px;
     height: 200px;
     left:500px;
-    top:350px;
+    top:400px;
     border-color:rgb(0, 0, 0) !important;
 
-    background: #84c1f6;
+    background: #1177B1;
 border-radius: 20px 20px 20px 20px;
 
     }
@@ -39,7 +39,7 @@ border-radius: 20px 20px 20px 20px;
     width: 57px;
     height: 42.11px;
     left: 630px;
-    top: 327.48px;
+    top: 350.48px;
     border-radius: 5px 5px 5px 5px;
     border-color: rgb(255, 255, 255)
     }
@@ -49,7 +49,7 @@ border-radius: 20px 20px 20px 20px;
     width: 403px;
     height: 20.21px;
     left: 619px;
-    top: 450px;
+    top: 300px;
     
     font-family: 'Inter';
     font-style: normal;
@@ -65,13 +65,13 @@ border-radius: 20px 20px 20px 20px;
     input[type="file"] {
         position: absolute;
         width: 300px;
-        height: 20.21px;
+        height: 80.21px;
         left: 180px;
         top: 50px;
-        background: #84c1f6;
+        background: #1177B1;
         border: none;
         padding: 10px;
-        color: #1b549b;
+        color: white;
         font-size: 16px;
         margin-right: 10px;
         border-radius: 20px 20px 20px 20px;
@@ -83,8 +83,8 @@ border-radius: 20px 20px 20px 20px;
         height: 30px;
         left: 250px;
         top: 120px;
-        background-color: #566cb2;
-        color: white;
+        background-color: white;
+        color: black;
         border: none;
         padding: 5px 5px 5px 5px ;
         font-size: 16px;

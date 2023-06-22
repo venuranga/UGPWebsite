@@ -2,9 +2,18 @@ import React, {useEffect, useState}from "react";
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import './Viewstudents.css'
+import Navbar from "../components/Navbar.js";
 
 function Viewstudents() {
   const [data, setData] = useState([]);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const storedAuth = JSON.parse(localStorage.getItem('auth'));
+    if (storedAuth && storedAuth.success) {
+      setUser(storedAuth.user);
+    }
+  }, []);
 
   useEffect(() => {
     async function fetchData() {
@@ -21,24 +30,26 @@ function Viewstudents() {
 
   function renderTable() {
     return (
-      <table style = {{border: "1px solid white", alignContent: "center", marginLeft:"500px", backgroundColor: "#b2d3e6"}} >
+      <table style = {{border: "1px solid white", alignContent: "center"}} class = 'table table-striped'>
         <thead>
           <tr>
-            <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}}>Student Name</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}}>Reg No</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}} >Project No</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}} >Project Title</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#8dbdd8"}}>Evaluator</th>
+            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}}>Group_ID</th>
+            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}}>Project_Title</th>
+            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}} >Main_supervisor's_name</th>
+            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}} >Co-supervisor's_name(s)</th>
+            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}}>Reg_No</th>
+            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}}>Name</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item, index) => (
             <tr key={index}>
-              <td style = {{border: "1px solid white"}}>{item.Student_Name}</td>
-              <td style = {{border: "1px solid white"}}>{item.Reg_No}</td>
-              <td style = {{border: "1px solid white"}}>{item.Project_No}</td>
+              <td style = {{border: "1px solid white"}}>{item.Group_ID}</td>
               <td style = {{border: "1px solid white"}}>{item.Project_Title}</td>
-              <td style = {{border: "1px solid white"}}>{item.Evaluator}</td>
+              <td style = {{border: "1px solid white"}}>{item["Main_supervisor's_name"]}</td>
+              <td style = {{border: "1px solid white"}}>{item["Co-supervisor's_name(s)"]}</td>
+              <td style = {{border: "1px solid white"}}>{item.Reg_No}</td>
+              <td style = {{border: "1px solid white"}}>{item.Name}</td>
             </tr>
           ))}
         </tbody>
@@ -50,15 +61,18 @@ function Viewstudents() {
     <div>
       {data.length > 0 ? (
         <div>
+         
             <Header />
-            <head>
+            <Navbar />
+            <span className="coordinatorname"> {user?.fullname} </span>
+            {/* <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      </head>
-            <br />
-            <br />
+      </head> */}
+      <br />
+      <br />
    
           <h2 style = {{marginLeft: "650px"}}>View Students</h2>
           {renderTable()}

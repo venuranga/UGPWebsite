@@ -7,6 +7,7 @@ const collectionRoutes = require("./routes/collection");
 const ResultsRoutes =  require("./routes/Results");
 const authRoutes = require("./routes/authRoute");
 const StudentRoutes = require("./routes/Students");
+const ProposalRoutes = require("./routes/Proposal_Marks")
 
 const app = express();
 
@@ -36,6 +37,7 @@ app.use('/api/createCollection', collectionRoutes);
 app.use('/api/results', ResultsRoutes);
 app.use("/api/v1/auth", authRoutes);
 app.use('/api/students', StudentRoutes);
+app.use('/api/proposal', ProposalRoutes);
 
 app.listen(port, () =>{
     console.log(`Server is running on port: ${port}`);

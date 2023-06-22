@@ -4,11 +4,13 @@ import Header from '../components/Header.js'
 
 import './homedepthead.css'
 import {  Link } from 'react-router-dom';
+import Navbar from '../components/Navbar.js';
 
 export default function Loginpage() {
   return (
     <div>
       <Header/>
+      <Navbar />
       <button className="projects">View Projects</button>
       <button className="analyzed">View Analyzed Data</button>
 

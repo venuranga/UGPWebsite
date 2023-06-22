@@ -7,6 +7,7 @@ const upload = multer({ dest: 'uploads/' });
 
 
 
+
 router.post('/add', upload.single('csv'), async (req,res) => {
     try {
         const csvData = await csvtojson().fromFile(req.file.path);
@@ -32,7 +33,8 @@ router.post('/add', upload.single('csv'), async (req,res) => {
 
         await Students.insertMany(newData);
         console.log("Data Inserted")
-        res.json({ success: 'Success'});
+        res.send("Data inserted successfully");
+        //toast.success("Success")
       } catch (error) {
         console.log(error);
         //next(error);
