@@ -16,6 +16,7 @@ import Viewstudents from './pages/Viewstudents'
 import AnalyzedData from './pages/analyzedData'
 import ImportProposalMarks from './pages/ImportProposalMarks'
 import ViewProposalMarks from './pages/ViewProposalMarks'
+import BarGraph from './components/Bargraph'
 //import ProtectedRoute from './components/ProtectedRoutes'
 //import AdminRouter from './components/Routes/AdminRoute'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -60,6 +61,7 @@ function App() {
       <Route path = "/AnalyzedData" element = {<AnalyzedData />} />
       <Route path = "/ImportProposalMarks" element = {<ImportProposalMarks />} />
       <Route path = "/ViewProposalMarks"  element = {<ViewProposalMarks />} />
+      <Route path = "/BarGraph" element = {<BarGraph />} />
      
     </Routes>
   </Router>
