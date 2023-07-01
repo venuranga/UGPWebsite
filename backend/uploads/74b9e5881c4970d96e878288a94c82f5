@@ -1,0 +1,103 @@
+Group_ID,Project_Title,Main_supervisor's_name,Co-supervisor's_name(s),Reg_No,Name
+1,Low-Cost Phasor Measurement Unit for Smart Grid application,Dr. Chandana Perera,"Prof. Athula D. Rajapakse, Department of Electrical and Computer Engineering
+University of Manitoba, Canada",EG/2018/3296,Dassanayake D.M.N.P. 
+1,Low-Cost Phasor Measurement Unit for Smart Grid application,Dr. Chandana Perera,"Prof. Athula D. Rajapakse, Department of Electrical and Computer Engineering
+University of Manitoba, Canada",EG/2018/3410,Pabudanan P.K.M.
+1,Low-Cost Phasor Measurement Unit for Smart Grid application,Dr. Chandana Perera,"Prof. Athula D. Rajapakse, Department of Electrical and Computer Engineering
+University of Manitoba, Canada",EG/2018/3466,Silva N.R.D. 
+2,Energy Storage for managing distribution grid with high photovoltaic power penetration,Dr. Iromi Ranweera,Ms. Dilshani Maheepala,EG/2018/3351,Jayasinghe U.L.C.K.P.
+2,Energy Storage for managing distribution grid with high photovoltaic power penetration,Dr. Iromi Ranweera,Ms. Dilshani Maheepala,EG/2018/3358,Karsnagoda K.K.T.D.
+2,Energy Storage for managing distribution grid with high photovoltaic power penetration,Dr. Iromi Ranweera,Ms. Dilshani Maheepala,EG/2018/3374,Kumari S.K.M.M.C.
+3,Synchronverter for integrating renewable energy into the power grid,Dr. Iromi Ranweera,Ms. Dinuwanthi Welmilla,EG/2018/3409,Pabasara W.M.D.U.
+3,Synchronverter for integrating renewable energy into the power grid,Dr. Iromi Ranweera,Ms. Dinuwanthi Welmilla,EG/2018/3419,Pirahavee L.
+3,Synchronverter for integrating renewable energy into the power grid,Dr. Iromi Ranweera,Ms. Dinuwanthi Welmilla,EG/2018/3507,Wijekoon W.M.K.G.V.B.
+4,Voltage Regulating Device for a Refrigerator,Dr. Iromi Ranweera,,EG/2018/3389,Manarandi J.M.R.
+4,Voltage Regulating Device for a Refrigerator,Dr. Iromi Ranweera,,EG/2018/3451,Sanduni L.S.  
+5,Blockchain for Poisoning Attacks in Hierarchical Federated Learning Systems,"Dr. Chatura Seneviratne 
+","Dr. Madhunaka Liyanage (University College Dublin, Ireland)",EG/2018/3480,Thennakoon T.M.R.N.
+5,Blockchain for Poisoning Attacks in Hierarchical Federated Learning Systems,"Dr. Chatura Seneviratne 
+","Dr. Madhunaka Liyanage (University College Dublin, Ireland)",EG/2018/3490,Wanigasundara W.M.A. 
+5,Blockchain for Poisoning Attacks in Hierarchical Federated Learning Systems,"Dr. Chatura Seneviratne 
+","Dr. Madhunaka Liyanage (University College Dublin, Ireland)",EG/2018/3494,Weerasinghe W.M.S.B.
+6,AI Enabled Hand Gesture Recognition using Ultra Wide Band (UWB) Impulse Radar Sensors,"Dr. Chatura Seneviratne 
+",,EG/2018/3317,Dissanayaka T.N.
+6,AI Enabled Hand Gesture Recognition using Ultra Wide Band (UWB) Impulse Radar Sensors,"Dr. Chatura Seneviratne 
+",,EG/2018/3446,Samarakoon M.R.S.C.
+6,AI Enabled Hand Gesture Recognition using Ultra Wide Band (UWB) Impulse Radar Sensors,"Dr. Chatura Seneviratne 
+",,EG/2018/3472,Thakshmila M.D.
+7,AI-enabled Adaptive Microwave Filter for Cognitive Radio Front-ends,"Dr. Chatura Seneviratne 
+",Dr. Arjuna Madanayake (Deep-Si Technologies),EG/2018/3312,Dharmasir W.D.A.R. 
+7,AI-enabled Adaptive Microwave Filter for Cognitive Radio Front-ends,"Dr. Chatura Seneviratne 
+",Dr. Arjuna Madanayake (Deep-Si Technologies),EG/2018/3390,Manukularathna D.M.S.V.
+7,AI-enabled Adaptive Microwave Filter for Cognitive Radio Front-ends,"Dr. Chatura Seneviratne 
+",Dr. Arjuna Madanayake (Deep-Si Technologies),EG/2018/3399,De Silva A.T.
+8,Collaborative Federated Learning Platform for Privacy-preserved Decentralized Machine Learning in Industrial Internet of Things,Dr. Thilina Weerasinghe,"Mr. T. D. Gamage 
+Dr. Madhusanka Liyanage (University College Dublin, Ireland)",EG/2018/3365,Ketawala K.I.L.
+8,Collaborative Federated Learning Platform for Privacy-preserved Decentralized Machine Learning in Industrial Internet of Things,Dr. Thilina Weerasinghe,"Mr. T. D. Gamage 
+Dr. Madhusanka Liyanage (University College Dublin, Ireland)",EG/2018/3375,Kushani P.G.K.M. 
+8,Collaborative Federated Learning Platform for Privacy-preserved Decentralized Machine Learning in Industrial Internet of Things,Dr. Thilina Weerasinghe,"Mr. T. D. Gamage 
+Dr. Madhusanka Liyanage (University College Dublin, Ireland)",EG/2018/3412,Pathiraja P.M.S.L.
+9,Reducing the Uplink Digital Domain Complexity in 5G and beyond,Dr. Thilina Weerasinghe ,"Najath Akram (Lead wireless systems design engineer for Jabil Inc., New Jersey, USA)",EG/2018/3293,Dananjaya Y.H.
+9,Reducing the Uplink Digital Domain Complexity in 5G and beyond,Dr. Thilina Weerasinghe ,"Najath Akram (Lead wireless systems design engineer for Jabil Inc., New Jersey, USA)",EG/2018/3336,Hamni M.F.M.
+9,Reducing the Uplink Digital Domain Complexity in 5G and beyond,Dr. Thilina Weerasinghe ,"Najath Akram (Lead wireless systems design engineer for Jabil Inc., New Jersey, USA)",EG/2018/3367,Kishanthan S.
+10,IoT based Wearable Wireless Body Area Network,Dr. Subodha Gunawardena,,EG/2018/3273,Amarasingha P.M. 
+10,IoT based Wearable Wireless Body Area Network,Dr. Subodha Gunawardena,,EG/2018/3335,Gunawardhana S.D.H.C
+10,IoT based Wearable Wireless Body Area Network,Dr. Subodha Gunawardena,,EG/2018/3443,Sabaragamuwa S.B.N.M.
+11,Open-source simulator for 5G new radio (NR) mode 2 vehicle-to-everything (V2X) communication,Mr. Geeth Priyankara,,EG/2018/3311,Dharmarathne R.G.C.D.S.
+11,Open-source simulator for 5G new radio (NR) mode 2 vehicle-to-everything (V2X) communication,Mr. Geeth Priyankara,,EG/2018/3315,Dissanayaka D.M.S.D.
+11,Open-source simulator for 5G new radio (NR) mode 2 vehicle-to-everything (V2X) communication,Mr. Geeth Priyankara,,EG/2018/3404,Nethmini K.G.M. 
+12,Intelligent combination of WIFI and mobile data simultaneously for better internet speed,Mr. Geeth Priyankara,,EG/2018/3298,Dayarathna W.C.N.
+12,Intelligent combination of WIFI and mobile data simultaneously for better internet speed,Mr. Geeth Priyankara,,EG/2018/3397,Moyura M.L.
+12,Intelligent combination of WIFI and mobile data simultaneously for better internet speed,Mr. Geeth Priyankara,,EG/2018/3402,Narangoda N.P.P.
+13,Blockchain-enabled RF Radiation Exposure Level Measurements in Wireless Mobile Networks,Mr. Geeth Priyankara,"Dr. Chatura Seneviratne
+Dr. Madusanka Liyanage (University College Dublin, Ireland)",EG/2018/3333,Gunatilake A.A.P.I.
+13,Blockchain-enabled RF Radiation Exposure Level Measurements in Wireless Mobile Networks,Mr. Geeth Priyankara,"Dr. Chatura Seneviratne
+Dr. Madusanka Liyanage (University College Dublin, Ireland)",EG/2018/3382,Madawalage D.M.K.N.V
+13,Blockchain-enabled RF Radiation Exposure Level Measurements in Wireless Mobile Networks,Mr. Geeth Priyankara,"Dr. Chatura Seneviratne
+Dr. Madusanka Liyanage (University College Dublin, Ireland)",EG/2018/3473,Thalgahagoda R.W.P.K.T.D
+14,Implementation of the random access channel (NPRACH) base station processing chain NB-IoT on digital hardware,Dr. Thilina Weerasinghe ,,EG/2018/3269,Ahamed M.F.F.
+14,Implementation of the random access channel (NPRACH) base station processing chain NB-IoT on digital hardware,Dr. Thilina Weerasinghe ,,EG/2018/3415,Perera L.D.
+14,Implementation of the random access channel (NPRACH) base station processing chain NB-IoT on digital hardware,Dr. Thilina Weerasinghe ,,EG/2018/3464,Shimla M.J.F.
+15,Cooperative Wireless Networking for Smart Grid,Mr. D. S. De Silva,,EG/2018/3300,De Silva K.H.N.K.
+15,Cooperative Wireless Networking for Smart Grid,Mr. D. S. De Silva,,EG/2018/3433,Ranatunga W.A.A.S.
+15,Cooperative Wireless Networking for Smart Grid,Mr. D. S. De Silva,,EG/2018/3438,Rathnasekara P.M.P.K.
+16,Traffic rule violation detection system based on image processing,Mr. D. S. De Silva,Mr. Achintha I. Kondarage,EG/2018/3275,Appuhamy J.A.D.P.B.
+16,Traffic rule violation detection system based on image processing,Mr. D. S. De Silva,Mr. Achintha I. Kondarage,EG/2018/3277,Ashfa A.A.
+16,Traffic rule violation detection system based on image processing,Mr. D. S. De Silva,Mr. Achintha I. Kondarage,EG/2018/3347,Jayarathna J.M.V.M.
+17,Deep Learning-based Virtual Assistant in Sinhala Language-Phase II,Dr. Kushan Sudheera,"Dr. J.C.S. Kadupitiya (Software Engineer, Microsoft Corporation, USA)
+Mr. W.G.C.A. Sankalpa",EG/2018/3286,Bandara H.M.P.
+17,Deep Learning-based Virtual Assistant in Sinhala Language-Phase II,Dr. Kushan Sudheera,"Dr. J.C.S. Kadupitiya (Software Engineer, Microsoft Corporation, USA)
+Mr. W.G.C.A. Sankalpa",EG/2018/3357,Kalyanarathne W.M.U.W .
+17,Deep Learning-based Virtual Assistant in Sinhala Language-Phase II,Dr. Kushan Sudheera,"Dr. J.C.S. Kadupitiya (Software Engineer, Microsoft Corporation, USA)
+Mr. W.G.C.A. Sankalpa",EG/2018/3432,Ranasinghe K.K.P.M.
+18,Analysis of the IoT threat Landscape ,Dr. Kushan Sudheera,,EG/2018/3321,Ediriweera G.A.R.S.
+18,Analysis of the IoT threat Landscape ,Dr. Kushan Sudheera,,EG/2018/3499,Wickramadhara E.W.T.K.
+18,Analysis of the IoT threat Landscape ,Dr. Kushan Sudheera,,EG/2018/3503,Wicramasinghe R.A.A.G.
+19,Development of a V2X testbed to study the characteristics of vehicular networks,Dr. Kushan Sudheera,"Mr. P. A. D. S. N. Wijesekara
+Prof. Peter Han Joo Chong (Auckland University of Technology, New Zealand)",EG/2018/3304,Dematawaarachchi D.A.D.H.P.
+19,Development of a V2X testbed to study the characteristics of vehicular networks,Dr. Kushan Sudheera,"Mr. P. A. D. S. N. Wijesekara
+Prof. Peter Han Joo Chong (Auckland University of Technology, New Zealand)",EG/2018/3318,Dissanayake D.M.M.B.
+19,Development of a V2X testbed to study the characteristics of vehicular networks,Dr. Kushan Sudheera,"Mr. P. A. D. S. N. Wijesekara
+Prof. Peter Han Joo Chong (Auckland University of Technology, New Zealand)",EG/2018/3342,Indrasiri K.B.S.L.
+20,Creating a Stress Profile of Chess Players,Dr. N. W. Prins,Prof K. D. Pathirana,EG/2018/3356,Jeewanka R.M.C.
+20,Creating a Stress Profile of Chess Players,Dr. N. W. Prins,Prof K. D. Pathirana,EG/2018/3470,Subhodani B.L.D.H
+20,Creating a Stress Profile of Chess Players,Dr. N. W. Prins,Prof K. D. Pathirana,EG/2018/3510,Wijerathne M. B.
+21,Adaptive System using Edge Machine Learning for Gait Improvement in Patients with Parkinson Disease,Dr.N.W. Prins,Prof K. D. Pathirana,EG/2018/3270,Ahamed M.Z.M.
+21,Adaptive System using Edge Machine Learning for Gait Improvement in Patients with Parkinson Disease,Dr.N.W. Prins,Prof K. D. Pathirana,EG/2018/3271,Ahsan M.N.M.
+21,Adaptive System using Edge Machine Learning for Gait Improvement in Patients with Parkinson Disease,Dr.N.W. Prins,Prof K. D. Pathirana,EG/2018/3393,Mazar S.M.M.
+22,Digital Braille Code Display Device for Sinhala Language,Dr.N.W. Prins,,EG/2018/3340,Hussain M.J.M.J.
+22,Digital Braille Code Display Device for Sinhala Language,Dr.N.W. Prins,,EG/2018/3436,Ranjith B.
+23,Brachial Plexus Nerve Trunk Recognition in Ultrasound images using FPGA,Mr. Achintha I. Kondarage,"Mr. Udara De Silva (PhD research fellow, Florida International University)",EG/2018/3385,Madhushani H.D.V.N.
+23,Brachial Plexus Nerve Trunk Recognition in Ultrasound images using FPGA,Mr. Achintha I. Kondarage,"Mr. Udara De Silva (PhD research fellow, Florida International University)",EG/2018/3471,Sudara N.H.M. 
+24,Secure Document Management Framework using Block chain,Dr. Rajitha Udawalpola,,EG/2018/3344,Iruthayaraja A.M.
+24,Secure Document Management Framework using Block chain,Dr. Rajitha Udawalpola,,EG/2018/3421,Poovallal J.
+24,Secure Document Management Framework using Block chain,Dr. Rajitha Udawalpola,,EG/2018/3445,Sajipranath Y. 
+25,Anomaly Detection in Signatures using Deep Learning,Dr. Rajitha Udawalpola,,EG/2018/3448,Samarakoon S.W.K.C.H.
+25,Anomaly Detection in Signatures using Deep Learning,Dr. Rajitha Udawalpola,,EG/2018/3513,Yapa W.S.P.Y.G.C.
+26,"Abnormal Event Detection in Surveillance Videos
+in Real Time via Machine Learning",Dr. S. H. K. K. Gunawickrama,,EG/2018/3288,Basnayaka B.M.H.P.
+26,"Abnormal Event Detection in Surveillance Videos
+in Real Time via Machine Learning",Dr. S. H. K. K. Gunawickrama,,EG/2018/3372,Kumaradasa S.W.H. 
+26,"Abnormal Event Detection in Surveillance Videos
+in Real Time via Machine Learning",Dr. S. H. K. K. Gunawickrama,,EG/2018/3387,Madusanka I.K. 
+27,"Solar-powered, foldable, fully automated clothing rack",Dr. Nadeesha Sandamali,,EG/2017/3087,Karunanayake K.M.T.D.B.

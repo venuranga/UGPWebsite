@@ -2,13 +2,30 @@
     position: absolute;
     width: 580px;
     height: 200px;
-    left:500px;
+    border: 2px dasehd #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     left:500px;
     top:400px;
-    border-color:rgb(0, 0, 0) !important;
+    border-color:rgb(0, 0, 0) !important; 
 
     background: #1177B1;
-border-radius: 20px 20px 20px 20px;
+border-radius: 20px 20px 20px 20px; 
 
+    }
+
+    .rectangleimport1.dragover {
+      background-color: #000000;
+    }
+
+    .rectangleimport1.p {
+      margin-top: 10px;
+      color: #888;
+      font-size: 14px;
     }
 
     .additem
@@ -111,5 +128,5 @@ border-radius: 20px 20px 20px 20px;
         opacity: 0;
         cursor: pointer;
         background-color: #3858cd !important;
-      }
+      } 
     
