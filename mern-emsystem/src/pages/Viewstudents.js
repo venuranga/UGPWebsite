@@ -30,7 +30,7 @@ function Viewstudents() {
 
   function renderTable() {
     return (
-      <table style = {{border: "1px solid white", alignContent: "center"}} class = 'table table-striped'>
+      <table style = {{border: "1px solid white", alignContent: "center"}} class = 'table table-striped table-hover'>
         <thead>
           <tr>
             <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}}>Group_ID</th>

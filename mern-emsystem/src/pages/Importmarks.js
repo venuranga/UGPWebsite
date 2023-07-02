@@ -23,28 +23,25 @@ export default function Importmarks() {
     <div>
        <Header/>
        <Navbar />
+       <span className="coordinatorname"> {user?.fullname}</span>
        <br />
-       <br />
-       <br />
-       
-       <Link to="/Importmarksheet">
+
+
+<Link to="/Importmarksheet">
        <button className="importexcelsheet2">Import Excel Sheet</button>
             </Link>
      <Link to = "/Viewmarks">
       <button className="viewimporteddata2">View Marks</button>
       </Link>
 
-      <Link to = "/ImportProposalMarks">
+
+      {/* <Link to = "/ImportProposalMarks">
       <button className="importexcelsheet3">Import Proposal marks</button>
       </Link>
 
       <Link to = "/ViewProposalMarks">
       <button className="viewimporteddata3">View Proposal Marks </button>
-      </Link> 
-
-      
-
-<span className="coordinatorname"> {user?.fullname}</span>
+      </Link>  */}
 
       <Footer/>
     </div>

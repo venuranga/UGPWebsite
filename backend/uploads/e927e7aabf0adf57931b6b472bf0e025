@@ -1,0 +1,11 @@
+Group_ID,Project_Title,Introduction_Background_and_Problem_statement,Knowledge_on_related_existing_work,Objectives_Scope_and_Methodology,Examiners_overall_assessment,Mechanics_of_writing
+1,Noise controller,50,60,11,40,71
+2,Solar,40,55,47,55,41
+3,Wves,20,10,41,52,12
+4,Wind,20,40,75,44,22
+5,Geo,10,55,44,88,10
+6,Comm,11,44,55,66,44
+7,Radar,66,22,45,13,16
+8,Blockchain,26,48,16,75,29
+9,AI,19,75,63,13,46
+10,IOT,46,16,53,26,43

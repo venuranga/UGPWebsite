@@ -6,6 +6,7 @@ import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
 import Navbar from '../components/Navbar.js';
 import ReactDOM from 'react-dom';
+import "./analyzedData.css";
 
 
 const AnalyzedData = () => {
@@ -14,6 +15,14 @@ const AnalyzedData = () => {
   const [yAxis, setYAxis] = useState('');
   const chartRef = useRef(null);
   const summaryRef = useRef(null);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const storedAuth = JSON.parse(localStorage.getItem('auth'));
+    if (storedAuth && storedAuth.success) {
+      setUser(storedAuth.user);
+    }
+  }, []);
 
   const componentMapping = {
     component1: "Introduction_Background_and_Problem_statement",
@@ -215,7 +224,7 @@ const displaySummaryStats = (summaryStats) => {
     <div>
       <h3 style={{ marginLeft: "50px" }}>Summary Statistics</h3>
       <div className="table-responsive">
-        <table className="table table-striped">
+        <table className="table table-striped table-hover" style={{width: "900px" , marginLeft: "300px"}}>
           <thead>
             <tr>
               <th style={{ backgroundColor: "#1177B1" }}>Statistic</th>
@@ -263,11 +272,12 @@ const displaySummaryStats = (summaryStats) => {
     <div>
       <Header />
       <Navbar />
+      <span className="coordinatorname"> {user?.fullname} </span>
       <br />
       <br />
       <div className='dropdown'>
-        <label htmlFor="yAxis" style={{ marginLeft: "15px" }}>Select Y Axis:</label>
-        <select id="yAxis" value={yAxis} onChange={handleYAxisChange} className='form-select' style={{ width: "500px" }}>
+        <label htmlFor="yAxis" style={{ marginLeft: "50px" }}>Select Y Axis:</label>
+        <select id="yAxis" value={yAxis} onChange={handleYAxisChange} className='form-select' style={{ width: "500px", marginLeft: "50px" }}>
           <option value="component1">Introduction_Background_and_Problem_statement</option>
           <option value="component2">Knowledge_on_related_existing_work</option>
           <option value="component3">Objectives_Scope_and_Methodology</option>
@@ -278,7 +288,7 @@ const displaySummaryStats = (summaryStats) => {
         <br />
         <br />
         <br />
-        <div style={{ height: "300px" }}>
+        <div style={{ height: "300px", marginLeft: "50px" }}>
           <canvas ref={chartRef} />
         </div>
         <br />

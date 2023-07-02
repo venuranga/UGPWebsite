@@ -28,6 +28,8 @@ export default function Homecoordinator() {
       <Link to="/Importmarks">
         <button className="importmarks">Import Marks</button>
       </Link>
+
+      
       <span className="coordinatorname">{user?.fullname}</span>
       <Footer />
     </div>

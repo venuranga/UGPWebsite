@@ -32,7 +32,7 @@ function Viewmarks() {
     return (
 
       
-      <table style = {{border: "0.5px solid white", alignContent: "center", position: "relative"}} class = "table table-striped">
+      <table style = {{border: "0.5px solid white", alignContent: "center", position: "relative"}} class = "table table-striped table-hover">
         <thead>
           <tr>
             <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1"}}>Group ID</th>
