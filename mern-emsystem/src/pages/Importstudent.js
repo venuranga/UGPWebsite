@@ -30,12 +30,18 @@ const handleclick = () => {
     <div>
        <Header/>
        <Navbar />
+       <br />
+       <br />
+       <br />
+       <br />
        <Link to="/Importstudentlist">
-       <button className="importexcelsheet">Import Excel Sheet</button>
+       <button className="btn btn-success" style = {{marginLeft: "600px", width:"300px", height: "50px", backgroundColor: "#1177B1"}}>Import Excel Sheet</button>
             </Link>
-     
+     <br />
+     <br />
+     <br />
      <Link to = "/Viewstudents">
-      <button onClick={handleclick} className="viewimporteddata">View Imported Data</button>
+      <button onClick={handleclick} className="btn btn-success" style = {{marginLeft: "600px", width:"300px", height: "50px", backgroundColor: "#1177B1"}}>View Imported Data</button>
       </Link>
 
 <span className="coordinatorname">{user?.fullname}</span>

@@ -59,11 +59,13 @@ export default function ImportProposalMarks() {
     <div className="rectangleimport1">
       <ToastContainer />
    
-
-       <form enctype="multipart/form-data" action="http://localhost:5000/api/proposal/add" method="POST">
+<script>
+  var url = "http:localhost:5000"
+       <form enctype="multipart/form-data" action="url/api/proposal/add" method="POST">
 <input type="file" name="csv" />
 <input type="submit" value="Add File" onClick={handleFormSubmit} />
 </form>
+</script>
 
     </div>
      <Footer />

@@ -20,6 +20,36 @@ import BarGraph from './components/Bargraph'
 //import ProtectedRoute from './components/ProtectedRoutes'
 //import AdminRouter from './components/Routes/AdminRoute'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import EditResults from './pages/FinalEvaluation/EditFinalEva';
+import Form from './pages/FinalEvaluation/CreateFinalEvaForm'
+import Formpage2 from './pages/FinalEvaluation/GetFinalEva'
+import ResultsDetail from './pages/FinalEvaluation/GetOneFinalEva';
+
+import CreateForm from './pages/CoordinatorCriterias/CreateCriteriaForm';
+import GetCriterias from './pages/CoordinatorCriterias/GetCriterias';
+import EditCriterias from './pages/CoordinatorCriterias/EditCriterias';
+
+import AddProject from './pages/Projects/AddProject';
+import GetProject from './pages/Projects/GetProject';
+import EditProject from './pages/Projects/EditProject';
+import GetOneProject from './pages/Projects/GetOneProject';
+
+import CreatePropEvaForm from './pages/ProposalEvaluation/CreatePropEva';
+import EditPropEva from './pages/ProposalEvaluation/EditPropEva';
+import GetPropEva from './pages/ProposalEvaluation/GetPropEva';
+import CreateProgEvaForm from './pages/ProgressEvaluation/CreateProgEva';
+import EditProgEva from './pages/ProgressEvaluation/EditProgEva';
+import GetProgEva from './pages/ProgressEvaluation/GetProgEva';
+
+import Homeevaluator from './pages/homeevaluator'
+
+import Deptheadanalyzeddata from './pages/Deptheadanalyzeddata';
+
+import GetProjecthod from './pages/Deptheadproject/GetProject';
+
+
+
+
 
 // const Roles = {
 //   'ModuleCoordinator': 1
@@ -47,6 +77,9 @@ function App() {
         <Route path = "/Homecoordinator" element = {<Homecoordinator />} />
       {/* </Route> */}
 
+      <Route path = "/homeevaluator" element = {<Homeevaluator />} />
+
+      <Route path = "/Homestudent" element = {<Homestudent />} />
 
       
       <Route path="/Homestudent" element={<Homestudent />} />
@@ -62,6 +95,43 @@ function App() {
       <Route path = "/ImportProposalMarks" element = {<ImportProposalMarks />} />
       <Route path = "/ViewProposalMarks"  element = {<ViewProposalMarks />} />
       <Route path = "/BarGraph" element = {<BarGraph />} />
+
+      <Route path = "/Deptheadanalyzeddata" element = {<Deptheadanalyzeddata />} />
+
+            {/* evaluations */}
+            <Route path="/add" element={<Form />} />
+      <Route path="/edit/:id" element={<EditResults />} />
+      <Route path="/post/:id" element={<ResultsDetail />} />
+      <Route path="/get" element={<Formpage2 />} />
+
+      <Route path="propevaluations/add" element={<CreatePropEvaForm />} />
+      <Route path="propevaluations/edit/:id" element={<EditPropEva />} />
+      {/* <Route path="propevaluations/post/:id" element={<ResultsDetail />} /> */}
+      <Route path="propevaluations/get" element={<GetPropEva />} />
+
+      
+     
+      <Route path="progevaluations/add" element={<CreateProgEvaForm />} />
+      <Route path="progevaluations/edit/:id" element={<EditProgEva />} />
+      {/* <Route path="progevaluations/post/:id" element={< />} /> */}
+      <Route path="progevaluations/get" element={<GetProgEva />} />
+     
+
+     
+
+      <Route path="criterias/add" element={<CreateForm />} />
+      <Route path="criterias/get" element={<GetCriterias />} />
+      <Route path="criterias/edit/:id" element={<EditCriterias />}/>
+
+      <Route path="projects/add" element={<AddProject />} />
+      <Route path="projects/get" element={<GetProject />} />
+      <Route path="projects/get/:id" element={<GetOneProject />} />
+      <Route path="projects/edit/:id" element={<EditProject />}/>
+
+      <Route path = "GetProjecthod" element = {<GetProjecthod />} />
+
+      
+
      
     </Routes>
   </Router>

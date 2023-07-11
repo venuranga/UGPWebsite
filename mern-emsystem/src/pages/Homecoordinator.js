@@ -19,17 +19,38 @@ export default function Homecoordinator() {
     <div>
       <Header />
       <Navbar />
+      <br />
+      <br />
+      <br />
       <Link to = "/AnalyzedData">
-      <button className="viewdata">View Analyzed Data</button>
+      <button class="btn btn-primary"  style={{marginLeft:"600px", width: "300px", height: "50px", backgroundColor: "#1177B1"}}>View Analyzed Data</button>
       </Link>
+      <br />
+      <br />
       <Link to="/Importstudent">
-        <button className="addstudents">Add Students</button>
+        <button class="btn btn-primary "  style={{marginLeft:"600px", width: "300px", height: "50px", backgroundColor: "#1177B1"}}>Add Students</button>
       </Link>
+      <br />
+      <br />
       <Link to="/Importmarks">
-        <button className="importmarks">Import Marks</button>
+        <button class="btn btn-primary "  style={{marginLeft:"600px", width: "300px", height: "50px", backgroundColor: "#1177B1"}}>Import Marks</button>
       </Link>
-
-      
+      <br />
+      <br />
+          <Link to = "/criterias/add">
+          <button class="btn btn-primary "  style={{marginLeft:"600px" , width: "300px", height: "50px", backgroundColor: "#1177B1"}}>
+              Add New Criterias
+            </button>
+            </Link>
+            <br />
+            <br />
+         <Link to = "/criterias/get">
+          <button class="btn btn-primary  " style={{marginLeft:"600px", width: "300px", height: "50px", backgroundColor: "#1177B1"}}>
+              Get all criterias
+          </button>
+          </Link>
+          <br />
+          <br />
       <span className="coordinatorname">{user?.fullname}</span>
       <Footer />
     </div>

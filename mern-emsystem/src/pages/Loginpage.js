@@ -15,6 +15,8 @@ export default function Loginpage() {
     <div>
       <Header/>
       <Navbar />
+
+      <p> student - username: eg193775 password: 123456 modulecoodinator: eg164989 password: 123456 evaluator: eg193757 password: 12345678 DeptHead: eg193522 password: 12345678</p>
       <button className="notlogged">You are not logged in</button>
 <Loginform/>
       <Footer/>
@@ -22,7 +24,7 @@ export default function Loginpage() {
               <button className="notlogged">You are not logged in</button>
             </Link>
 
-           <Link to="/Homedepthead">
+           {/* <Link to="/Homedepthead">
               <button className="depthead">depthead</button>
             </Link>
             <Link to="/Homecoordinator">
@@ -30,7 +32,7 @@ export default function Loginpage() {
             </Link>
             <Link to="/Homestudent">
               <button className="student">student</button>
-            </Link>
+            </Link> */}
     </div>
   )
 }

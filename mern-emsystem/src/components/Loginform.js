@@ -3,6 +3,7 @@ import {ToastContainer,toast} from 'react-toastify';
 import './loginform.css';
 import axios from 'axios';
 import {useNavigate,useLocation} from 'react-router-dom';
+import { URL } from '../env';
 //import { useAuth } from '../context/auth';
 //import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,11 +21,12 @@ import 'react-toastify/dist/ReactToastify.css';
     const location = useLocation();
 
 
+
     const handleSubmit = async (e) => {
     e.preventDefault();
   
     try {
-      const res = await axios.post("http://localhost:5000/api/v1/auth/login", {
+      const res = await axios.post(URL + "/api/v1/auth/login", {
       username,
       password,
       });
@@ -51,15 +53,18 @@ import 'react-toastify/dist/ReactToastify.css';
         navigate('/Homecoordinator');
         console.log(setIsAuthenticated1);
        }
-      // else if(res.data.user.role === 3) {
-      //   IsAuthenticated3(true);
-      // }
-      //  else if(res.data.user.role === 2) {
-      //   IsAuthenticated2(true);
-      // }
-      // else if(res.data.user.role === 0) {
-      //   IsAuthenticated0(true);
-      // }
+      else if(res.data.user.role === 3) {
+        navigate('/Homedepthead');
+        IsAuthenticated3(true);
+      }
+       else if(res.data.user.role === 2) {
+        navigate('/Homeevaluator');
+        IsAuthenticated2(true);
+      }
+      else if(res.data.user.role === 0) {
+        navigate('/Homestudent')
+        IsAuthenticated0(true);
+      }
 
       console.log(auth);
       console.log(auth.user.role);

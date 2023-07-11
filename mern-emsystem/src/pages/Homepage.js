@@ -7,6 +7,7 @@ import '../components/homerectangle.css'
 import { Link  } from 'react-router-dom';
 import Navbar from '../components/Navbar.js'
 import Slider from '../components/slider.js'
+import ProjectSlider from '../components/Projects.js';
 
 export default function Homepage() {
   return (
@@ -27,6 +28,8 @@ export default function Homepage() {
             <Link to="/loginpage">
               <button className="login">Log In</button>
             </Link>
+
+            <ProjectSlider />
    <Footer/>
     </div>
   )

@@ -1,0 +1,59 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  
+  }
+  
+  
+  .eve-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height:600px;
+    margin-bottom: 1px;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border: 2px solid #1A8FCE;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .btn-btn-primary {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #0088cc;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .btn btn-primary:hover{
+    color: #000000;
+    background-color: #35ade9;
+  }
+  
+  
+ 

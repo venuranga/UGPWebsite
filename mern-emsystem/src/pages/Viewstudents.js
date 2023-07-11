@@ -3,6 +3,7 @@ import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import './Viewstudents.css'
 import Navbar from "../components/Navbar.js";
+import { URL } from "../env.js";
 
 function Viewstudents() {
   const [data, setData] = useState([]);
@@ -18,7 +19,7 @@ function Viewstudents() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:5000/api/students/view');
+        const response = await fetch(URL + '/api/students/view');
         const json = await response.json();
         setData(json);
       } catch (error) {
@@ -30,26 +31,26 @@ function Viewstudents() {
 
   function renderTable() {
     return (
-      <table style = {{border: "1px solid white", alignContent: "center"}} class = 'table table-striped table-hover'>
-        <thead>
+      <table style = {{border: "1px solid white"}} className = 'table table-striped table-hover'>
+        <thead class ="thead-dark">
           <tr>
-            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}}>Group_ID</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}}>Project_Title</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}} >Main_supervisor's_name</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}} >Co-supervisor's_name(s)</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}}>Reg_No</th>
-            <th style = {{border: "1px solid white", backgroundColor: "#1177B1"}}>Name</th>
+            <th >Group_ID</th>
+            <th >Project_Title</th>
+            <th  >Main_supervisor's_name</th>
+            <th  >Co-supervisor's_name(s)</th>
+            <th >Reg_No</th>
+            <th >Name</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item, index) => (
             <tr key={index}>
-              <td style = {{border: "1px solid white"}}>{item.Group_ID}</td>
-              <td style = {{border: "1px solid white"}}>{item.Project_Title}</td>
-              <td style = {{border: "1px solid white"}}>{item["Main_supervisor's_name"]}</td>
-              <td style = {{border: "1px solid white"}}>{item["Co-supervisor's_name(s)"]}</td>
-              <td style = {{border: "1px solid white"}}>{item.Reg_No}</td>
-              <td style = {{border: "1px solid white"}}>{item.Name}</td>
+              <td>{item.Group_ID}</td>
+              <td>{item.Project_Title}</td>
+              <td>{item["Main_supervisor's_name"]}</td>
+              <td>{item["Co-supervisor's_name(s)"]}</td>
+              <td>{item.Reg_No}</td>
+              <td>{item.Name}</td>
             </tr>
           ))}
         </tbody>
@@ -75,6 +76,8 @@ function Viewstudents() {
       <br />
    
           <h2 style = {{marginLeft: "650px"}}>View Students</h2>
+          <br />
+          <br />
           {renderTable()}
           <Footer />
         </div>

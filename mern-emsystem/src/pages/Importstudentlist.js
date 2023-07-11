@@ -66,10 +66,8 @@ export default function Importmarksheet() {
     <span className="title">Add Student List </span>
     
       <ToastContainer />
-      <br />
-      
       <div className="rectangleimport1">
-   
+  
 
   <form enctype="multipart/form-data" action="http://localhost:5000/api/students/add" method="POST">
     <br />

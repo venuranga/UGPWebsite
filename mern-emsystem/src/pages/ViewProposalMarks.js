@@ -3,6 +3,7 @@ import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import Navbar from "../components/Navbar.js";
 import './importProposalMarks.css';
+import { URL } from "../env.js";
 
 function ViewProposalMarks() {
   const [data, setData] = useState([]);
@@ -19,7 +20,7 @@ function ViewProposalMarks() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:5000/api/proposal/grades');
+        const response = await fetch(URL + '/api/proposal/grades');
         const json = await response.json();
         setData(json);
       } catch (error) {

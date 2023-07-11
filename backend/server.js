@@ -7,7 +7,14 @@ const collectionRoutes = require("./routes/collection");
 const ResultsRoutes =  require("./routes/Results");
 const authRoutes = require("./routes/authRoute");
 const StudentRoutes = require("./routes/Students");
-const ProposalRoutes = require("./routes/Proposal_Marks")
+const ProposalRoutes = require("./routes/Proposal_Marks");
+
+//import routes
+const finalEvaRoutes = require('./routes/finalEvaRoutes');
+const critiriaRoute = require('./routes/critiriaRoutes');
+const projectRoutes = require('./routes/projectRoutes');
+const evaluationProgRoute = require('./routes/progEvaRoutes');
+const evaluationPropRoute = require('./routes/propEvaRoutes');
 
 const app = express();
 
@@ -32,6 +39,12 @@ mongoose.connect(url, {
     console.log("Error connecting to MongoDB database:", err);
 });
 
+//route middleware
+app.use(finalEvaRoutes);
+app.use(critiriaRoute);
+app.use(projectRoutes);
+app.use(evaluationProgRoute);
+app.use(evaluationPropRoute);
 
 app.use('/api/createCollection', collectionRoutes);
 app.use('/api/results', ResultsRoutes);

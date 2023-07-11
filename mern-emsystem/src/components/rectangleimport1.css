@@ -1,5 +1,5 @@
 .rectangleimport1 {
-    position: absolute;
+    position: relative;
     width: 580px;
     height: 200px;
     border: 2px dasehd #ccc;
@@ -10,7 +10,7 @@
     justify-content: center;
     text-align: center;
      left:500px;
-    top:400px;
+    top:200px;
     border-color:rgb(0, 0, 0) !important; 
 
     background: #1177B1;

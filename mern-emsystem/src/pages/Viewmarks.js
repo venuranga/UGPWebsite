@@ -2,6 +2,7 @@ import React, {useEffect, useState}from "react";
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import Navbar from "../components/Navbar.js";
+import { URL } from "../env.js";
 
 function Viewmarks() {
   const [data, setData] = useState([]);
@@ -18,7 +19,7 @@ function Viewmarks() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:5000/api/results/grades');
+        const response = await fetch(URL + '/api/results/grades');
         const json = await response.json();
         setData(json);
       } catch (error) {
@@ -32,16 +33,16 @@ function Viewmarks() {
     return (
 
       
-      <table style = {{border: "0.5px solid white", alignContent: "center", position: "relative"}} class = "table table-striped table-hover">
+      <table style = {{border: "0.5px solid white"}} class = "table table-striped table-hover">
         <thead>
           <tr>
-            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1"}}>Group ID</th>
-            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1"}}>Project_Title</th>
-            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1"}}>Introduction_Background_and_Problem_statement</th>
-            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1"}} >Knowledge_on_related_existing_work</th>
-            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1"}} >Objectives_Scope_and_Methodology</th>
-            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1"}}>Examiner_overall_assessment</th>
-            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1"}}>Mechanics_of_writing</th>
+            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1", color: "white"}}>Group ID</th>
+            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1", color: "white"}}>Project_Title</th>
+            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1", color: "white"}}>Introduction_Background_and_Problem_statement</th>
+            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1", color: "white"}} >Knowledge_on_related_existing_work</th>
+            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1", color: "white"}} >Objectives_Scope_and_Methodology</th>
+            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1", color: "white"}}>Examiner_overall_assessment</th>
+            <th style = {{border: "0.5px solid white", backgroundColor: "#1177B1", color: "white"}}>Mechanics_of_writing</th>
           </tr>
         </thead>
         <tbody>
@@ -73,7 +74,8 @@ function Viewmarks() {
 <br />
 <br />
           <h2 style ={{marginLeft: '650px'}}>View Marks</h2>
-
+          <br />
+          <br />
           {renderTable()}
           <Footer />
         </div>

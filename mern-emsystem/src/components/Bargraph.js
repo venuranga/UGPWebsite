@@ -10,7 +10,7 @@ const BarGraph = ({ finaldata, proposalData, yAxis }) => {
       const groupIDs = [...new Set(finaldata.map(item => item.Group_ID))];
 
       // Prepare the dataset for Chart.js
-      const datasets = groupIDs.map(groupID => {
+        const datasets = groupIDs.map(groupID => {
         const finalGroupData = finaldata.filter(item => item.Group_ID === groupID);
         const proposalGroupData = proposalData.filter(item => item.Group_ID === groupID);
 

@@ -3,9 +3,15 @@
   width: 1519px;
   height: 170px;
   left: 0px;
-  top: 735px;
+  margin-bottom: 0px;
+   top: 1000px; 
+  display: flex;
+  flex-direction: column;
+  /*margin-top: auto;*/
   
   background: #1177B1;
+  flex-shrink: 0;
+
 }
 
 .university-link {

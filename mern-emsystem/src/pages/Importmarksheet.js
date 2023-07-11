@@ -9,6 +9,7 @@ import './importmarksheet.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../components/Navbar'
+import { URL } from '../env'
 
 
 
@@ -56,14 +57,15 @@ export default function Importmarksheet() {
     <Navbar />
     <span className="coordinatorname"> {user?.fullname}</span>
     <span className="marksheet" style ={{color: 'black'}}>Add Mark Sheet</span>
+    <ToastContainer />
     <div className="rectangleimport1">
-      <ToastContainer />
-   
 
-       <form enctype="multipart/form-data" action="http://localhost:5000/api/results/add" method="POST">
+
+       <form enctype="multipart/form-data" action=  'http:localhost:5000/api/results/add'  method="POST">
 <input type="file" name="csv" />
 <input type="submit" value="Add File" onClick={handleFormSubmit} />
 </form>
+
 
     </div>
      <Footer />
