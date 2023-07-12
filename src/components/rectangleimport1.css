@@ -1,0 +1,67 @@
+.rectangleimport1 {
+    position: absolute;
+    width: 580px;
+    height: 200px;
+    left:500px;
+    top:350px;
+    border-color:rgb(0, 0, 0) !important;
+
+    background: #b2d3e6;
+border-radius: 20px 20px 20px 20px;
+
+    }
+
+
+    input[type="file"]::-webkit-file-upload-button {
+        position: absolute;
+        width: 300px;
+        
+        left: 140px;
+        top: 50px;
+        background: #84c1f6;
+        border: none;
+        padding: 10px;
+        color: #1b549b;
+        font-size: 16px;
+        margin-right: 10px;
+        border-radius: 20px 20px 20px 20px;
+      }
+      
+      input[type="submit"] {
+        position: absolute;
+        width: 80px;
+        padding: 10px;
+        left: 250px;
+        top: 120px;
+        background-color: #68a7ca;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 5px 5px 5px 5px ;
+        font-size: 16px;
+        cursor: pointer;
+       
+        border-radius: 5px 5px 5px 5px;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #4390bc;
+      }
+      
+      .file-upload-wrapper {
+        position: absolute;
+        left: 40;
+        top: 40;
+       
+        display: inline-block;
+      }
+      
+      .file-upload-wrapper input[type="file"] {
+        font-size: 100px;
+        position: absolute;
+        left: 40;
+        top: 40;
+    
+        cursor: pointer;
+        background-color: #3858cd !important;
+      }
+    

@@ -1,0 +1,29 @@
+.rectanglefooter {
+  position: relative;
+    width: 1519px;
+    height: 170px;
+    left: 0px;
+    top: 735px;
+    
+    background: #4390bc;
+  }
+
+  .university-link {
+    
+    
+position: absolute;
+
+width: 264.83px;
+height: 16.79px;
+left: 134px;
+top:770px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 550;
+font-size: 16px;
+line-height: 19px;
+
+
+color: #000000;
+}

@@ -1,0 +1,80 @@
+.proposal-marks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+
+}
+
+
+.proposal-marks {
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  border: 2px solid #1A8FCE;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.proposal-marks-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="text"],
+input[type="text"],
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.SubmitMarks {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #0088cc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.SubmitMarks{
+  color: #ffffff;
+  background-color: #0088cc;
+  border-radius: 5px;
+}
+
+.SubmitMarks:hover{
+  color: #000000;
+  background-color: #52a7d1;
+}
+
+.ProposalMarkk{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: inter;
+  color: #0088cc;
+  position:absolute;
+  top:200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}

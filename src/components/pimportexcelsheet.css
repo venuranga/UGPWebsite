@@ -1,0 +1,26 @@
+.pimportexcelsheet
+{
+    position: absolute;
+    left:200px;
+    top:170px;
+    background-color:transparent;
+    font-size: medium;
+    color: black;
+    font-weight: 600;
+    font-family: lato;
+
+   
+    border-color: transparent;
+}
+
+.pimportexcelsheet:hover
+{
+    
+   
+  font-weight: 700 !important;
+    color:#4390bc;
+    cursor:pointer;
+
+   
+   
+}

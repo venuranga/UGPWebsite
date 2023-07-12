@@ -1,0 +1,39 @@
+
+.custom-table {
+  margin:0 auto;
+  border: none;
+  width: 80%;
+}
+
+
+.table {
+  
+  margin-top: 200px;
+  margin-left:300px ;
+  width:80%;
+  color: #000000;
+  
+
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+
+.table th {
+  background-color: #8dbdd8;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.table tbody tr{
+  background-color: #b2d3e6;
+}
+
+.table tbody tr:hover {
+  background-color: #d8e9f3;
+}

@@ -1,0 +1,105 @@
+.ProposalMarks
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+width: 300.1px;
+height: 40.9px;
+text-align:center;
+top: 300px;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+background:#68a7ca;
+border-radius: 10px;
+border:transparent;
+color: #000000;
+
+}
+.ProposalMarks:hover {
+    width: 320px;
+    height: 50px;
+    color: #FFFFFF;
+    background: #4390bc;
+    cursor: pointer;
+  }
+
+.ProgressEvaluationMarks
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+width: 300.1px;
+height: 40.9px;
+text-align:center;
+top: 400px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+background:#68a7ca;
+border-radius: 10px;
+border:transparent;
+color: #000000;
+margin:0 auto;
+}
+.ProgressEvaluationMarks:hover {
+    width: 320px;
+    height: 50px;
+    color: #FFFFFF;
+    background: #4390bc;
+    cursor: pointer;
+  }
+
+  .FinalEvaluationMarks
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+width: 300.1px;
+height: 40.9px;
+text-align:center;
+top: 500px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+background:#68a7ca;
+border-radius: 10px;
+border:transparent;
+color: #000000;
+margin:0 auto;
+}
+.FinalEvaluationMarks:hover {
+    width: 320px;
+    height: 50px;
+    color: #FFFFFF;
+    background: #4390bc;
+    cursor: pointer;
+  }
+
+  .evaluatorname
+  {
+    position: absolute;
+    width: 264.83px;
+    height: 16.79px;
+    left: 1200px;
+    top: 60px;
+    background-color: transparent;
+    border-color: transparent;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+  }

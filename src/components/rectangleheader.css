@@ -1,0 +1,55 @@
+.rectangleheader {
+  position: absolute;
+  width: 1519px;
+  height: 135px;
+  left:0px;
+  top:0px;
+  background: #4390bc;
+  }
+
+.logo
+{
+    position: absolute;
+width: 90px;
+height: auto;
+left: 30px;
+top: 13px;
+}
+
+.UPP1
+{
+  position: absolute;
+width: 181px;
+height: 69.82px;
+left: 134px;
+top: 29px;
+
+font-family: 'open sans';
+font-style: normal;
+font-weight: 600;
+font-size:17px;
+line-height: 20px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.UPP2
+{
+  position: absolute;
+width: 181px;
+height: 69.82px;
+left: 134px;
+top: 58px;
+
+font-family: 'open sans';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 20px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}

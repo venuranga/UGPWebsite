@@ -1,0 +1,62 @@
+/* Styles for the form container */
+.form-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #1A8FCE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: 380px;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    justify-content: center;
+  
+  }
+
+  .form-container h4 {
+    text-align: center;
+    font-size :25px !important;
+    font-weight: 800px !important;
+    color:  #1A8FCE !important;
+
+  }
+  
+  /* Styles for the criteria name label */
+  .form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Styles for the input fields */
+  .form-container input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for the submit button */
+  .form-container button {
+    background-color: #1A8FCE;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+  margin: 0 auto;
+  }
+  
+  .form-container button:hover {
+    background-color:#74c3ed;
+    color: black;
+  }
+  

@@ -1,0 +1,33 @@
+.notlogged
+{
+    position: absolute;
+width:10px;
+height: 16.79px;
+left: 1200px !important;
+top: 60px;
+background-color: transparent;
+border-color: transparent;
+
+font-family: 'open sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+.notlogged:hover{
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.homeimg
+{
+    position: absolute;
+left: 0%;
+right: 0.21%;
+top: 14.82%;
+bottom: 19.38%;
+}
